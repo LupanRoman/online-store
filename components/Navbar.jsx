@@ -21,7 +21,7 @@ const Navbar = () => {
 
 
       <div className="right">
-        <button onClick={() => {setShowCart(true)}} ><BsFillCartFill />
+        <button className='btn-cart' onClick={() => {setShowCart(true)}} ><BsFillCartFill />
         <span className='cart-qty'>{totalQuantities}</span></button>
       </div>
 

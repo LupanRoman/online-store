@@ -199,12 +199,18 @@
 .right {
   display: flex;
   margin-right: 40px;
+  background-color: transparent;
 }
 
 .right button {
   font-size: 30px;
   cursor: pointer;
   border: none;
+  color: black;
+  background-color: transparent;
+}
+
+.btn-cart {
   color: black;
 }
 
@@ -313,6 +319,7 @@
   margin-bottom: 120px;
   cursor: pointer;
   border-radius: 20px;
+  color: black;
 }
 
 /* Product details styling */
