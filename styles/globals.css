@@ -412,4 +412,24 @@
   background-color: #d3d3d3;
 }
 
+.total-qty {
+  display: flex;
+  height: 80px;
+  
+  align-items: center;
+  position: absolute;
+  margin-left: 20px;
+  bottom: 5%;
+}
+
+.buy {
+  margin-left: 40px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #d3d3d3;
+}
+
+
 /* Cart styling */

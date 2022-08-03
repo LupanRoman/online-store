@@ -5,7 +5,7 @@ import { urlFor } from '../lib/client';
 
 const Cart = ({ closeCart }) => {
 
-  const { incQty, decQty, qty, cartItems, totalPrice, totalQuantities } = useStateContext();
+  const { incQty, decQty, qty, cartItems, totalPrice, totalQuantities, toggleCartItemQuantity, onRemove } = useStateContext();
 
 
 
@@ -41,18 +41,25 @@ const Cart = ({ closeCart }) => {
               <p>${item.price}</p>
             </div>
               <div className="btns-cart">
-                  <button onClick="" className='minus'>-</button>
-                  <p className='qty-cart'>0</p>
-                  <button onClick="" className='plus'>+</button>
-                  <button className='remove-item'>Remove</button>
+                  <button onClick={() => toggleCartItemQuantity(item._id, 'dec')} className='minus'>-</button>
+                  <p className='qty-cart'>{item.quantity}</p>
+                  <button onClick={() => toggleCartItemQuantity(item._id, 'inc')} className='plus'>+</button>
+                  <button onClick={() => onRemove(item)} className='remove-item'>Remove</button>
               </div>
 
             </div>
           </div>
-
-
         ))}    
           </div>
+          { cartItems.length >= 1 && (
+            <div className="total-qty">
+              <h3>Total price:</h3>
+              <h3>${totalPrice}</h3>
+              <div className="payment">
+                <button className='buy'>Pay with Stripe</button>
+              </div>
+            </div>
+          )}
       </div>   
      </>
   )
