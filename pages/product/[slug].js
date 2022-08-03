@@ -14,12 +14,13 @@ const ProductDetails = ({ product, products }) => {
         <div className="product-details-component">
             <div className="product-image">
             <img src={urlFor(image)} width='300' alt="" />
-
             </div>
 
             <div className="product-details">
+            <div className="name-product-page">
                 <h5>{name}</h5>
                 <p>${price}</p>
+            </div>
                 <p>{description}</p>
                 <div className="qty-btn">
                     <button onClick={decQty} className='minus'>-</button>

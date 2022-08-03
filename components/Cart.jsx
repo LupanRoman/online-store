@@ -2,17 +2,37 @@ import React from 'react';
 import { useStateContext } from '../context/StateContext';
 import Link from 'next/link';
 import { urlFor } from '../lib/client';
+import { useRef } from 'react';
+import getStripe from '../lib/getStripe';
 
 const Cart = ({ closeCart }) => {
 
+  const cartRef = useRef(); 
+
   const { incQty, decQty, qty, cartItems, totalPrice, totalQuantities, toggleCartItemQuantity, onRemove } = useStateContext();
 
+  // const handleCheckout = async () => {
+  //   const stripe = await getStripe();
 
+  //   const response = await fetch('/api/stripe', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(cartItems),
+  //   });
+
+  //   if(response.statusCode === 500) return;
+
+  //   const data = await response.json();
+
+  //   stripe.redirectToCheckout({ sessionId: data.id });
+  // }
 
 
   return (
     <>
-      <div className="cart-component" >
+      <div className="cart-component" ref={cartRef}>
       <div className="top-side">
         <button onClick={() => {closeCart(false)}}>X</button>
         <h4>Your cart</h4>
