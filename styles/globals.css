@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro';
+}
+
+/* Hero Banner styling */
+
+.hero-banner-container {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 50px; */
+  background-color: #d3d3d3;
+  width: 100%;
+  height: 450px;  
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.left-side h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.left-side button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  background-color: #B20000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-image {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  color: black;
+}
+/* Hero Banner styling */
+
+/* Footer Banner styling */
+
+.footer-banner-component {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+  background-color: #d3d3d3;
+  width: 100%;
+  height: 480px; 
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.left-side h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.left-side h4 {
+  font-size: 20px;
+}
+
+.footer-image {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right-side button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  background-color: #B20000;
+  font-weight: 600;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.right-side p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  color: black;
+}
+
+/* Footer Banner styling */
+
+/* Home page styling */
+
+.home-page-component {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page-component h3 {
+  align-self: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: black;
+}
+
+.home-page-component p {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.best-selling-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Home page styling */
+
+/* Product component styling */
+
+.product-component {
+  background-color: #d3d3d3;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 300px;
+  transition: transform .3s;
+  /* height: 300px; */
+}
+
+.product-component:hover {
+  transform: scale(1.1);
+}
+
+/* Product component styling */
+
+/* NavBar styling */
+
+.nav-bar-component {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  margin-left: 40px;
+  cursor: pointer;
+  /* height: 10vh; */
+  /* align-items: center; */
+}
+
+.left p {
+  font-size: 60px;
+}
+
+.left h5 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.right {
+  display: flex;
+  margin-right: 40px;
+}
+
+.right button {
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.cart-qty {
+  position: absolute;
+}
+
+/* NavBar styling */
+
+/* Footer styling */
+
+.footer-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icons {
+  margin-bottom: 10px;
+}
+
+.footer-component p {
+  margin-bottom: 10px;
+}
+
+/* Footer styling */
+
+/* Product details styling */
+
+.product-details-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.product-details h5 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.product-details p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.qty-btn {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  /* background-color: aqua; */
+}
+
+.qty-btn button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #d3d3d3;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.qty-btn button:hover {
+  background-color: #B20000;
+}
+
+.plus {
+  margin-left: 10px;
+}
+
+.minus {
+  margin-right: 10px;
+}
+
+.qty {
+  margin-top: 15px;
+}
+
+.add-to-cart {
+  width: 150px;
+  height: 40px;
+  align-self: center;
+  margin-top: 20px;
+  background-color: #B20000;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 120px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Product details styling */
+
+/* Cart styling */
+
+.cart-component {
+  height: 100vh;
+  width: 300px;
+  background-color: rgb(197, 177, 177);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  transition: all 2s ease-in-out;
+  float: right;
+}
+
+.top-side {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+.top-side button {
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.top-side h4 {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.top-side p {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-cart button {
+  margin-top: 20px;
+  width: 160px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  background-color: #B20000;
+  font-weight: 600;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.product-cart-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-cart-component {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 100px;
+}
+
+.product-cart-component img {
+  margin-left: 10px;
+}
+
+.product-details-cart {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.name-price {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.btns-cart {
+  display: flex;
+  flex-direction: row;
+}
+
+.minus, .plus {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #d3d3d3;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.remove-item {
+  margin-left: 20px;
+  height: 20px;
+  width: 60px;
+  border: none;
+  cursor: pointer;
+  background-color: #d3d3d3;
+}
+
+/* Cart styling */
